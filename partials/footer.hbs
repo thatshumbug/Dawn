@@ -1,5 +1,8 @@
 <footer class="site-footer container">
     <div class="social">
+        {{#if navigation type="secondary"}}
+          {{navigation type="secondary"}}
+	{{else}}
         {{#if @site.facebook}}
             <a class="social-item social-item-facebook"
                 href="{{facebook_url @site.facebook}}" target="_blank"
@@ -25,7 +28,7 @@
                 <use xlink:href="#rss-box"></use>
             </svg>
         </a>
-        {{navigation type="secondary"}}
+	{{end}}
     </div>
 
     <div class="copyright">
