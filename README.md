@@ -13,8 +13,9 @@ A highly functional theme that adapts to the reader's preferences. Let them read
 
 # Search
 
-1. Generate a content API key in `Integrations` section which will be used to fetch posts from your site.
-2. Insert the generated key in `Code injection > Site Header` field.
+1. Navigate to the `Integrations` and click on `Add custom integration`. 
+2. Copy the content API key; this will be used to fetch posts from your site.
+3. Insert the generated key in `Code injection > Site Header` field.
 
 ```html
 <script>
@@ -49,6 +50,16 @@ If your logo image isn't recognizable in dark mode, you can set a white version 
 </script>
 ```
 
+# Dropdown Menu
+
+The theme looks for a menu item with three dots (`...`) in its URL, and uses that as a dropdown menu toggle. All menu items after the toggle will be added to the dropdown list automatically.
+
+| Label      | URL                       |
+|------------|---------------------------|
+| More links | https://example.com/...   |
+| Sub-1      | https://example.com/sub-1 |
+| Sub-2      | https://example.com/sub-2 |
+
 # Development
 
 Styles are compiled using Gulp/PostCSS to polyfill future CSS spec. You'll need [Node](https://nodejs.org/), [Yarn](https://yarnpkg.com/) and [Gulp](https://gulpjs.com) installed globally. After that, from the theme's root directory:
@@ -75,4 +86,4 @@ yarn zip
 
 # Copyright & License
 
-Copyright (c) 2013-2020 Ghost Foundation - Released under the [MIT license](LICENSE).
+Copyright (c) 2013-2021 Ghost Foundation - Released under the [MIT license](LICENSE).
